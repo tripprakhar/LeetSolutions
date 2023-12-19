@@ -14,37 +14,7 @@ public:
                 ans=max(ans,h-l+1);
             }
             h++;
-//             if(h-l-chh < k){
-//                 arr[s[h]-'A']++;
-//                 if(arr[s[h]-'A'] > chh){
-//                     chh = arr[s[h]-'A'];
-//                     ch = s[h];
-//                 }
-//                 ans = max(ans,h-l+1);
-//                 h++;
-//                 cout<<"01"<<" ";
-//             }else if(h-l-chh == k && s[h]==ch){
-//                 arr[s[h]-'A']++;
-//                 ans = max(ans,h-l+1);
-//                 h++;chh++;
-//                 cout<<"02"<<" ";
-//             }else{
-//                 arr[s[l]-'A']--;
-//                 if(s[l]==ch){
-//                     chh--;
-//                     if(chh==0){
-//                         ch=s[l+1];
-//                     }
-//                     for(int j=0;j<26;j++){
-//                         if(arr[j]>chh){chh=arr[j];ch='A'+j;cout<<" "<<ch<<" ";}
-                        
-//                     }
-//                 }
-//                 l++;
-//                 cout<<"03"<<" ";
-//             }
         }
-        cout<<endl;
         return ans;
     }
 };
