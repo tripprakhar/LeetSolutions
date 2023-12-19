@@ -7,12 +7,10 @@ public:
         while(l<n && h<n){
             arr[s[h]-'A']++;
             chh = max(chh,arr[s[h]-'A']);
-            if((h-l+1)-chh>k){
+            while((h-l+1)-chh>k){
                 arr[s[l]-'A']--;l++;
-                ans=max(ans,h-l+1);
-            }else{
-                ans=max(ans,h-l+1);
             }
+             ans=max(ans,h-l+1);
             h++;
         }
         return ans;
